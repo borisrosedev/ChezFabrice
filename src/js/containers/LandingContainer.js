@@ -2,13 +2,11 @@ import MessageService from "../services/MessageService.js";
 
 class LandingContainer {
   constructor() {
-
-    const messageService= new MessageService()
+    const messageService = new MessageService();
     messageService.message = {
       content: "Accueil",
-      type: "info"
-    }
-    
+      type: "info",
+    };
   }
 
   onClick() {}

@@ -1,9 +1,7 @@
 const messageAside = () => {
-    return(
-        `
+  return `
             <aside id="message" class="message-aside"></aside>
-        `
-    )
-}
+        `;
+};
 
-export default messageAside
+export default messageAside;

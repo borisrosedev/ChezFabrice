@@ -2,10 +2,9 @@ import button from "../components/button.js";
 import message from "../components/message.js";
 
 const logoutUI = function () {
-
   setTimeout(() => {
-    window.location.hash=""
-  }, 3000)
+    window.location.hash = "";
+  }, 3000);
 
   const messageData = {
     card: {

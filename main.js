@@ -26,29 +26,27 @@ const routerPush = function (hash) {
   if (hash == "") {
     console.log("La page racine");
     container.innerHTML += landingUI();
-    container.innerHTML += messageAside()
-    new LandingContainer()
+    container.innerHTML += messageAside();
+    new LandingContainer();
   }
 
   if (hash == "#login") {
     container.innerHTML += loginUI();
-    container.innerHTML += messageAside()
+    container.innerHTML += messageAside();
     new LoginContainer();
   }
 
   if (hash == "#register") {
     container.innerHTML += registerUI();
-    container.innerHTML += messageAside()
+    container.innerHTML += messageAside();
     new RegisterContainer();
   }
 
-  if(hash == "#logout"){
+  if (hash == "#logout") {
     container.innerHTML += logoutUI();
-    container.innerHTML += messageAside()
+    container.innerHTML += messageAside();
     new LogoutContainer();
   }
-
-
 };
 
 routerPush(window.location.hash);

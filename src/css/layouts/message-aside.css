@@ -1,20 +1,17 @@
 .message-aside {
-    min-height: 5vh;
-    position: fixed;
-    bottom: 10px;
-    z-index: 20;
-    display: flex;
-    justify-content: center;
-    left: 10px;
-    padding: 5px;
+  min-height: 5vh;
+  position: fixed;
+  bottom: 10px;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  left: 10px;
+  padding: 5px;
 
-    .notification {
-        text-align: center;
-        padding: 10px;
-        opacity: 0;
-        animation: show-right 1000ms ease-in-out forwards;
-    }
-
+  .notification {
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    animation: show-right 1000ms ease-in-out forwards;
+  }
 }
-
-

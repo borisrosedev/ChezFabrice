@@ -1,13 +1,10 @@
 .logout__main {
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: color;
- 
-    & > section:first-of-type {
-      margin-top: 30px;
-      align-self: center;
-    }
-  
-   
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: color;
+
+  & > section:first-of-type {
+    margin-top: 30px;
+    align-self: center;
+  }
 }
-  

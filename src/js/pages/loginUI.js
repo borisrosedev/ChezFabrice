@@ -2,16 +2,14 @@ import form from "../components/form.js";
 import CustomLocalStorageService from "../services/CustomLocalStorageService.js";
 
 const loginUI = function () {
+  const token = CustomLocalStorageService.getSpecificItem("token");
 
-  const token = CustomLocalStorageService.getSpecificItem("token")
-
-  console.log(token)
-  if(token && token.isLoggedIn){
+  console.log(token);
+  if (token && token.isLoggedIn) {
     setTimeout(() => {
-      window.location.hash = ""
-    })
+      window.location.hash = "";
+    });
   }
-
 
   const data = {
     formId: "login-form",

@@ -51,7 +51,6 @@
   }
 }
 
-
 @keyframes move-out {
   from {
     transform: translateX(0);
