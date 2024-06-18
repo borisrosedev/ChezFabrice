@@ -1,5 +1,7 @@
 // le plus important la logique métier de la page login
 
+import AuthService from "../services/AuthService.js";
+
 class LoginContainer {
   // Je pars du principe qu'au moment où j'utilise cette classe l'interface login est déjà associé au html
   // Le constructeur est une fonction très particulière
@@ -36,6 +38,12 @@ class LoginContainer {
 
     passwordError.innerText = emailError.innerText = "";
     console.log(emailValue, passwordValue);
+    AuthService.login({ email: emailValue, password: passwordValue})
+      .then(() => {
+        setTimeout(() => {
+            window.location.hash = ""
+        }, 2000)
+      })
   }
 }
 

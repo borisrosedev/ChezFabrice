@@ -26,7 +26,6 @@
     color: #fff;
     opacity: 0;
     animation: show-up 1000ms ease-in-out 1000ms forwards;
-    
 
     a {
       color: var(--primary-color);

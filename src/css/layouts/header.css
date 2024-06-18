@@ -10,4 +10,17 @@
   z-index: 20;
   background-color: var(--primary-color);
   box-shadow: 0 0 5px rgb(0, 0, 0);
+
+  nav {
+    opacity: 0;
+    animation: show-left 1000ms ease-in-out 1000ms forwards;
+
+    a {
+      transition: all ease-in-out 300ms;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
 }

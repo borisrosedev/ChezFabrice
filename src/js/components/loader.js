@@ -1,8 +1,6 @@
-const loading = function(){
-    return(
-        `
+const loading = function () {
+  return `
             <div class="loader"></div>
         
-        `
-    )
-}
+        `;
+};

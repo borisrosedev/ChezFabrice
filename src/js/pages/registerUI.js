@@ -1,11 +1,9 @@
 import form from "../components/form.js";
 
 const registerUI = function () {
-
   const data = {
     formId: "register-form",
     inputs: [
-
       {
         id: "email",
         type: "email",
@@ -20,7 +18,7 @@ const registerUI = function () {
         id: "confirmed-password",
         type: "password",
         placeholder: "Confirmez votre mot de passe",
-      }
+      },
     ],
     buttons: [
       {

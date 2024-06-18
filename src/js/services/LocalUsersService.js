@@ -1,10 +1,9 @@
-import ApiDataSource from "../dataSources/remote/ApiDataSource"
+import ApiDataSource from "../dataSources/remote/ApiDataSource.js";
 
 class LocalUsersService {
-
-    async getUsers(){
-        return await ApiDataSource.get("./src/mock/databases/users.json")
-    }
+  static async getUsers() {
+    return await ApiDataSource.get("./src/mock/databases/users.json");
+  }
 }
 
-export default LocalUsersService
+export default LocalUsersService;

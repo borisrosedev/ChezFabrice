@@ -1,21 +1,18 @@
 [
-
-    {
-        "email":"boris@gmail.com",
-        "password":"caroline"
-    },
-    {
-        "email": "agnies@gmail.com",
-        "password":"mathematiques"   
-    },
-    {
-        "email":"mariame@gmail.com",
-        "password":"angine"
-    },
-    {
-        "email":"musta@gmail.com",
-        "password":"delegate"
-    }
-
-
+  {
+    "email": "boris@gmail.com",
+    "password": "caroline"
+  },
+  {
+    "email": "agnies@gmail.com",
+    "password": "mathematiques"
+  },
+  {
+    "email": "mariame@gmail.com",
+    "password": "angine"
+  },
+  {
+    "email": "musta@gmail.com",
+    "password": "delegate"
+  }
 ]

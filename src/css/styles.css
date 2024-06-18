@@ -9,6 +9,7 @@
 @import url(components/form.css);
 @import url(components/nav.css);
 @import url(layouts/header.css);
+@import url(layouts/message-aside.css);
 @import url(components/message.css);
 @import url(pages/landing.css);
 @import url(pages/login.css);
