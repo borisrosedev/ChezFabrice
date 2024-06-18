@@ -11,6 +11,12 @@
   background-color: var(--primary-color);
   box-shadow: 0 0 5px rgb(0, 0, 0);
 
+  & > a:first-of-type {
+    font-family: "Parisienne", cursive;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
   nav {
     opacity: 0;
     animation: show-left 1000ms ease-in-out 1000ms forwards;
