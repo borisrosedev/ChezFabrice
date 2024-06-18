@@ -1,10 +1,5 @@
-const nav = function(){
-
-    
-
-
-    return(
-        `
+const nav = function () {
+  return `
             <nav class="nav">
                 <a href="/">
                     <i class="fa-solid fa-house"></i>
@@ -14,14 +9,10 @@ const nav = function(){
                 </a>
                 <a href="#login">
                  <i class="fa-solid fa-right-to-bracket"></i>
-                </a>
-
-            
-            
+                </a> 
             </nav>
         
-        `
-    )
-}
+        `;
+};
 
-export default nav
+export default nav;

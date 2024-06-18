@@ -1,7 +1,5 @@
-const card = function(data){
-
-    return(
-        `
+const card = function (data) {
+  return `
             <article class="card">
 
                 <figure>
@@ -10,13 +8,14 @@ const card = function(data){
                         alt="${data.imageAlt}"
                     />
                 </figure>
-                <p>
+                <section>
+                    <p>
                     ${data.content}
-                </p>
+                    </p>
+                </section>
             </article>
         
-        `
-    )
-}
+        `;
+};
 
-export default card
+export default card;

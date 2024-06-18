@@ -1,9 +1,7 @@
-const input = function(id, placeholder, type){
-    return(
-        `
+const input = function (id, placeholder, type) {
+  return `
             <input id="${id}" placeholder="${placeholder}" type="${type}" />
-        `
-    )
-}
+        `;
+};
 
-export default input
+export default input;

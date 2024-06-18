@@ -1,9 +1,8 @@
-import card from "./card.js"
-import paragraph from "./paragraph.js"
+import card from "./card.js";
+import paragraph from "./paragraph.js";
 
-const message = function(data){
-    return(
-        `
+const message = function (data) {
+  return `
             <section class="message">
                 ${card(data.card)}
                 <section>
@@ -11,8 +10,7 @@ const message = function(data){
                 </section>
             </section>
         
-        `
-    )
-}
+        `;
+};
 
-export default message
+export default message;

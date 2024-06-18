@@ -1,0 +1,18 @@
+.form {
+  padding: 10px;
+  opacity: 0;
+  animation: show-up 1000ms ease-in-out forwards;
+
+  > section:first-of-type {
+    display: flex;
+    flex-direction: column;
+  }
+
+  > section:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    button {
+      background-color: rgb(254, 197, 168);
+    }
+  }
+}

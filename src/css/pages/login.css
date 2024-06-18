@@ -1,5 +1,21 @@
 .login__main {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  form {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  input {
+    outline: none;
+  }
+
+  & > section {
+    width: 60%;
+    align-self: center;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-self: center;
+  }
 }

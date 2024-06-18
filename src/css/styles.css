@@ -3,6 +3,7 @@
 @import url(base/base.css);
 @import url(components/button.css);
 @import url(components/input.css);
+@import url(components/input-article.css);
 @import url(components/form.css);
 @import url(components/nav.css);
 @import url(layouts/header.css);

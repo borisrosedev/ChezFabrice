@@ -1,21 +1,22 @@
 .landing__main {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.4);
-    background-blend-mode: color;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: color;
 
-    & > section:first-of-type {
-        margin-top: 30px;
-        align-self: center;
+  button {
+      text-transform: uppercase;
+  }
+
+  & > section:first-of-type {
+    margin-top: 30px;
+    align-self: center;
+  }
+
+  > section + section {
+    align-self: center;
+    button {
+      margin-block: 20px;
+      padding: 10px 8px;
     }
-
-
-    > section + section {
-
-        align-self: center;
-        button {
-            margin-block: 20px;
-            padding: 10px 8px;
-        }
-    }
+  }
 }

@@ -1,12 +1,9 @@
-const registerUI = function(){
-
-    return(
-        `
+const registerUI = function () {
+  return `
             <main></main>    
     
 
-        `
-    )
-}
+        `;
+};
 
-export default registerUI
+export default registerUI;

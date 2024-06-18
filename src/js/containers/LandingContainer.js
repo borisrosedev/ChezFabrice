@@ -1,14 +1,7 @@
 class LandingContainer {
+  constructor() {}
 
-    constructor(){
-
-    }
-
-
-    onClick(){
-        
-    }
-
+  onClick() {}
 }
 
-export default LandingContainer
+export default LandingContainer;
