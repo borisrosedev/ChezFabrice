@@ -32,9 +32,9 @@ const loginUI = function () {
   return `
 
             <main class="main login__main">
-            
-                ${form(data)}
-            
+                <section>
+                  ${form(data)}
+                </section>
             </main>
 
         
