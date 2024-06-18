@@ -1,3 +1,2 @@
 #!/bin/bash
-
-./procedures/push-workflow.sh "fix"
+./procedures/push-workflow.sh $1
