@@ -3,30 +3,30 @@ import form from "../components/form.js";
 const loginUI = function () {
   const data = {
     formId: "login-form",
-    inputs: {
-      email: {
+    inputs: [
+      {
         id: "email",
         type: "email",
         placeholder: "Entrez votre email",
       },
-      password: {
+      {
         id: "password",
         type: "password",
         placeholder: "Entrez votre mot de passe",
       },
-    },
-    buttons: {
-      reset: {
-        type: "reset",
-        id: "reset",
-        content: "Réinitialiser",
-      },
-      submit: {
+    ],
+    buttons: [
+      {
         type: "submit",
         id: "submit",
         content: "Valider",
       },
-    },
+      {
+        type: "reset",
+        id: "reset",
+        content: "Réinitialiser",
+      },
+    ],
   };
 
   return `
@@ -35,6 +35,10 @@ const loginUI = function () {
                 <section>
                   ${form(data)}
                 </section>
+                <section>
+                  <small>Pas encore inscrit(e) ? Inscrivez-vous <a href="#register">ici</a> </small>
+                </section>
+             
             </main>
 
         

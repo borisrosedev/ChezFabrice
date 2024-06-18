@@ -8,6 +8,6 @@
   right: 0;
   left: 0;
   z-index: 20;
-  background-color: rgb(247, 202, 165);
+  background-color: var(--primary-color);
   box-shadow: 0 0 5px rgb(0, 0, 0);
 }

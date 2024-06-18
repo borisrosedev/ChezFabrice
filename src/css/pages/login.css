@@ -18,4 +18,19 @@
     flex-direction: column;
     align-self: center;
   }
+
+  & > section:last-of-type {
+    border: solid white 2px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    opacity: 0;
+    animation: show-up 1000ms ease-in-out 1000ms forwards;
+    
+
+    a {
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+  }
 }

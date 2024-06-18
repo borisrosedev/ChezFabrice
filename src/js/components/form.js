@@ -3,24 +3,18 @@ import inputArticle from "./input-article.js";
 import input from "./input.js";
 
 const form = function (data) {
-  // destructuration de l'objet data puis de l'objet inputs
-  // const inputs = data.inputs
-  const { email, password } = data.inputs;
-  // cela revient au même que
-  // const email = data.inputs["email"] ou data.inputs.email
-  // const password = data.inputs["password"] ou data.inputs.password
-  const { submit, reset } = data.buttons;
+
+    // la méthode map permet de prendre chaque  donnée d'un tableau et d'effectuer un traitement sur cette donnée 
+    // la fonction de rappel qui se trouve à l'intérieur des parenthèses de la fonction map prend comme paramètre notamment l'élément (et si vous voulez l'ajouer l'index)
 
   return `
-
+        
             <form  class="form" id="${data.formId}"> 
                 <section>
-                    ${inputArticle(email.id, input(email.id, email.placeholder, email.type))}
-                    ${inputArticle(password.id, input(password.id, password.placeholder, password.type))}
+                    ${data.inputs.map((el) => inputArticle(el.id, input(el.id, el.placeholder, el.type))).join('')}
                 </section>
                 <section>
-                    ${button(submit.content, submit.id, submit.type)}
-                    ${button(reset.content, reset.id, reset.type)}
+                    ${data.buttons.map((el) => button(el.content, el.id, el.type)).join('')}
                 </section>
             
             </form>

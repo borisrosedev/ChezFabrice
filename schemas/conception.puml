@@ -1,0 +1,25 @@
+@startuml conception
+skinparam backgroundColor #EEEBDC
+
+entity button.js as C1#blue
+entity input.js as C2#green 
+entity form.js as C3#Yellow
+entity loginUI.js as C4#Brown
+entity main.js as Router#Pink
+
+
+create C3
+C1 -> C3: est appelée dans
+note over C1: button.js est un composant autonome et réutilisable
+C2 -> C3: est appelée dans
+note over C2: input.js est un composant autonome et réutilisable
+create C4
+note over C3: form.js est un composant réutilisable et autonome qui va nécessiter des inputs et des buttons donc on va appeler les fonctions UI de création de boutons et d'inputs dans son corps
+C3 -> C4: est appelée dans
+note over C3: loginUI.js est une page composant elle abrite le contexte et peut contenir dans son corps des informations contextuelles à transmettre à ses composants enfants
+create Router
+C4 -> Router: est appelée dans
+note over Router: main.js contient la logique de routing, il va associer la page composant, en fonction d'une condition (hash), au contenu d'une div qui existe déjà sur le DOM
+
+
+@enduml

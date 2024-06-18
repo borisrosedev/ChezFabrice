@@ -4,7 +4,7 @@
   background-blend-mode: color;
 
   button {
-      text-transform: uppercase;
+    text-transform: uppercase;
   }
 
   & > section:first-of-type {

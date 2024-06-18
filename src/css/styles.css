@@ -1,6 +1,8 @@
+@import url(base/variables.css);
 @import url(base/topology.css);
 @import url(utils/keyframes.css);
 @import url(base/base.css);
+@import url(components/loader.css);
 @import url(components/button.css);
 @import url(components/input.css);
 @import url(components/input-article.css);

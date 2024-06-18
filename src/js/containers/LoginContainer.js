@@ -36,7 +36,6 @@ class LoginContainer {
 
     passwordError.innerText = emailError.innerText = "";
     console.log(emailValue, passwordValue);
-  
   }
 }
 

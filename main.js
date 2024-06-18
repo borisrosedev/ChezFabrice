@@ -1,9 +1,11 @@
 //logique de routing
 
 import LoginContainer from "./src/js/containers/LoginContainer.js";
+import RegisterContainer from "./src/js/containers/RegisterContainer.js";
 import header from "./src/js/layouts/header.js";
 import landingUI from "./src/js/pages/landingUI.js";
 import loginUI from "./src/js/pages/loginUI.js";
+import registerUI from "./src/js/pages/registerUI.js";
 
 const container = document.getElementById("container");
 
