@@ -3,6 +3,8 @@ import LocalUsersService from "./LocalUsersService.js";
 import MessageService from "./MessageService.js";
 
 class AuthService {
+
+  
   static async login({ email, password }) {
     const users = await LocalUsersService.getUsers();
     console.log("users", users);
@@ -23,19 +25,28 @@ class AuthService {
               type: "positive",
               content: "Vous êtes connecté(e)",
             };
+            return true
           }
         } else {
           new MessageService().message = {
             type: "negative",
             content: "Informations incorrectes",
           };
+          return false
         }
       } else {
         new MessageService().message = {
           type: "negative",
           content: "Informations incorrectes",
         };
+        return false
       }
+    } else {
+      new MessageService().message = {
+        type: "negative",
+        content: "Impossible de se connecter à la base de données",
+      };
+      return false
     }
   }
 

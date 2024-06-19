@@ -39,12 +39,18 @@ class LoginContainer {
     passwordError.innerText = emailError.innerText = "";
     console.log(emailValue, passwordValue);
     AuthService.login({ email: emailValue, password: passwordValue }).then(
-      () => {
-        setTimeout(() => {
-          window.location.hash = "";
-        }, 2000);
+      (result) => {
+        if(result){
+          setTimeout(() => {
+            window.location.hash = "";
+          }, 2000);
+        }
+     
       },
     );
+
+
+
   }
 }
 
