@@ -7,9 +7,14 @@ class LandingContainer {
       content: "Accueil",
       type: "info",
     };
+
+    const landingMenuButton = document.getElementById("landing-menu-button");
+    landingMenuButton.onclick = (e) => this.onClick();
   }
 
-  onClick() {}
+  onClick() {
+    window.location.hash = "#menu";
+  }
 }
 
 export default LandingContainer;

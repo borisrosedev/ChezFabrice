@@ -1,24 +1,24 @@
 {
-    "workbench.colorCustomizations": {
-        "terminal.background": "#FFFFFF",
-        "terminal.foreground": "#404040",
-        "terminalCursor.background": "#404040",
-        "terminalCursor.foreground": "#404040",
-        "terminal.ansiBlack": "#FFFFFF",
-        "terminal.ansiBlue": "#0000FF",
-        "terminal.ansiBrightBlack": "#808080",
-        "terminal.ansiBrightBlue": "#0000FF",
-        "terminal.ansiBrightCyan": "#318495",
-        "terminal.ansiBrightGreen": "#007400",
-        "terminal.ansiBrightMagenta": "#A90D91",
-        "terminal.ansiBrightRed": "#C41A15",
-        "terminal.ansiBrightWhite": "#5E5E5E",
-        "terminal.ansiBrightYellow": "#826B28",
-        "terminal.ansiCyan": "#318495",
-        "terminal.ansiGreen": "#007400",
-        "terminal.ansiMagenta": "#A90D91",
-        "terminal.ansiRed": "#C41A15",
-        "terminal.ansiWhite": "#404040",
-        "terminal.ansiYellow": "#826B28"
-    }
+  "workbench.colorCustomizations": {
+    "terminal.background": "#FFFFFF",
+    "terminal.foreground": "#404040",
+    "terminalCursor.background": "#404040",
+    "terminalCursor.foreground": "#404040",
+    "terminal.ansiBlack": "#FFFFFF",
+    "terminal.ansiBlue": "#0000FF",
+    "terminal.ansiBrightBlack": "#808080",
+    "terminal.ansiBrightBlue": "#0000FF",
+    "terminal.ansiBrightCyan": "#318495",
+    "terminal.ansiBrightGreen": "#007400",
+    "terminal.ansiBrightMagenta": "#A90D91",
+    "terminal.ansiBrightRed": "#C41A15",
+    "terminal.ansiBrightWhite": "#5E5E5E",
+    "terminal.ansiBrightYellow": "#826B28",
+    "terminal.ansiCyan": "#318495",
+    "terminal.ansiGreen": "#007400",
+    "terminal.ansiMagenta": "#A90D91",
+    "terminal.ansiRed": "#C41A15",
+    "terminal.ansiWhite": "#404040",
+    "terminal.ansiYellow": "#826B28"
+  }
 }

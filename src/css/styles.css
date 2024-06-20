@@ -2,6 +2,10 @@
 @import url(base/topology.css);
 @import url(utils/keyframes.css);
 @import url(base/base.css);
+@import url(components/figure.css);
+@import url(components/menu-item.css);
+@import url(components/menu-items-list.css);
+@import url(components/paragraph.css);
 @import url(components/loader.css);
 @import url(components/button.css);
 @import url(components/input.css);

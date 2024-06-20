@@ -1,18 +1,26 @@
 [
   {
     "email": "boris@gmail.com",
-    "password": "caroline"
+    "password": "caroline",
+    "photoUrl": "https://cdn.pixabay.com/photo/2022/09/02/20/03/man-7428290_1280.jpg",
+    "wallet": 10000
   },
   {
     "email": "agnies@gmail.com",
-    "password": "mathematiques"
+    "password": "mathematiques",
+    "photoUrl": "https://cdn.pixabay.com/photo/2016/11/29/03/35/girl-1867092_1280.jpg",
+    "wallet": 300
   },
   {
     "email": "mariame@gmail.com",
-    "password": "angine"
+    "password": "angine",
+    "photoUrl": "https://cdn.pixabay.com/photo/2015/01/12/10/44/woman-597173_1280.jpg",
+    "wallet": 500
   },
   {
     "email": "musta@gmail.com",
-    "password": "delegate"
+    "password": "delegate",
+    "photoUrl": "https://cdn.pixabay.com/photo/2018/10/15/16/16/man-3749344_1280.jpg",
+    "wallet": 800
   }
 ]

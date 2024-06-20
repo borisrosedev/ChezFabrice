@@ -40,17 +40,13 @@ class LoginContainer {
     console.log(emailValue, passwordValue);
     AuthService.login({ email: emailValue, password: passwordValue }).then(
       (result) => {
-        if(result){
+        if (result) {
           setTimeout(() => {
             window.location.hash = "";
           }, 2000);
         }
-     
       },
     );
-
-
-
   }
 }
 

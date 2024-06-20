@@ -3,8 +3,6 @@ import LocalUsersService from "./LocalUsersService.js";
 import MessageService from "./MessageService.js";
 
 class AuthService {
-
-  
   static async login({ email, password }) {
     const users = await LocalUsersService.getUsers();
     console.log("users", users);
@@ -25,38 +23,46 @@ class AuthService {
               type: "positive",
               content: "Vous êtes connecté(e)",
             };
-            return true
+            return true;
           }
         } else {
           new MessageService().message = {
             type: "negative",
             content: "Informations incorrectes",
           };
-          return false
+          return false;
         }
       } else {
         new MessageService().message = {
           type: "negative",
           content: "Informations incorrectes",
         };
-        return false
+        return false;
       }
     } else {
       new MessageService().message = {
         type: "negative",
         content: "Impossible de se connecter à la base de données",
       };
-      return false
+      return false;
     }
   }
 
   static isLoggedIn() {
     const token = CustomLocalStorageService.getSpecificItem("token");
+    new MessageService().message = {
+      type: "info",
+      content: "Vous êtes toujours connecté(e)",
+    };
     return token.isLoggedIn;
   }
 
   static logout(token) {
     CustomLocalStorageService.removeSpecificItem(token);
+    new MessageService().message = {
+      type: "info",
+      content: "Déconnexion en cours",
+    };
   }
 }
 

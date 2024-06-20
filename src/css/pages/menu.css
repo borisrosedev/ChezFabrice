@@ -1,0 +1,20 @@
+.menu__main {
+
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: color;
+    background-image: url("../../../assets/inside-coffee.jpg");
+ 
+
+   & > section:first-of-type {
+        display: flex;
+        height: 100%;
+       
+        
+    }
+  
+
+  
+   
+}
+  

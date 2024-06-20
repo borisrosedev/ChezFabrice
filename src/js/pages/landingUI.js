@@ -19,7 +19,7 @@ const landingUI = function () {
                     ${message(messageData)}
                 </section>
                 <section>
-                    ${button("Nos plats", "landing-button", "button")}
+                    ${button("Nos plats", "landing-menu-button", "button")}
                 </section>
             
             </main>

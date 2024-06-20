@@ -1,0 +1,20 @@
+.menu-items-list {
+
+    overflow-y: scroll;
+    display: flex;
+    overflow-y: scroll;
+    height: 100vh;
+
+ 
+    justify-content: space-around;
+
+
+}
+
+@media (0 <=  width <= 514px) {
+    .menu-items-list  {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 100px;
+    } 
+}
