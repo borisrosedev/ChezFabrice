@@ -12,6 +12,8 @@
 @import url(components/input-article.css);
 @import url(components/form.css);
 @import url(components/nav.css);
+@import url(components/delivery-history.css);
+@import url(components/mini-cart.css);
 @import url(layouts/header.css);
 @import url(layouts/message-aside.css);
 @import url(components/message.css);
@@ -19,3 +21,6 @@
 @import url(pages/login.css);
 @import url(pages/logout.css);
 @import url(pages/menu.css);
+@import url(pages/cart.css);
+@import url(pages/dashboard.css);
+
