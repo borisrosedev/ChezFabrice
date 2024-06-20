@@ -9,7 +9,7 @@ class ProductsService {
     if (products.length) {
       new MessageService().message = {
         type: "positive",
-        content: "Récupérer des produits depuis la base de données distante",
+        content: "Récupération des produits depuis la base de données distante",
       };
       return products;
     } else {
