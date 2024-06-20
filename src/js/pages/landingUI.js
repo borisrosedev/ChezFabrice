@@ -10,7 +10,7 @@ const landingUI = function () {
       content: "Bienvenue Chez Fabrice",
     },
 
-    content: "N'hésitez pas à découvrir nos plats",
+    content: "Tout est né d'une envie familiale. Fabrice, mon petit frère, a toujours été timide et ne sait pas se mettre en valeur alors avec Léo, mon autre frère, nous avons fait en sorte que cet endroit existe pour vous le présenter à travers un restaurant gastronomique et cette application qui propose des livraisons à domicile et des réservations",
   };
 
   return `
