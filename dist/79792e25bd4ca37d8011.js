@@ -1,5 +1,4 @@
 //logique de routing
-
 import LandingContainer from "./src/js/containers/LandingContainer.js";
 import LoginContainer from "./src/js/containers/LoginContainer.js";
 import LogoutContainer from "./src/js/containers/LogoutContainer.js";
@@ -11,44 +10,41 @@ import landingUI from "./src/js/pages/landingUI.js";
 import loginUI from "./src/js/pages/loginUI.js";
 import logoutUI from "./src/js/pages/logoutUI.js";
 import menuUI from "./src/js/pages/menuUI.js";
+import ReactWalletUI from "./src/js/pages/ReactWalletUI.jsx";
 import registerUI from "./src/js/pages/registerUI.js";
-
+import "./src/css/styles.css";
 const container = document.getElementById("container");
-
 window.onpopstate = () => {
   routerPush(window.location.hash);
 };
-
 const routerPush = async function (hash) {
-  window.history.pushState({}, "", window.location.origin + hash);
-
+  window.history.pushState({}, "", window.location.pathname + hash);
   container.innerHTML = "";
   container.innerHTML += header();
-
   if (hash == "") {
     container.innerHTML += landingUI();
     container.innerHTML += messageAside();
     new LandingContainer();
   }
-
   if (hash == "#login") {
     container.innerHTML += loginUI();
     container.innerHTML += messageAside();
     new LoginContainer();
   }
-
   if (hash == "#register") {
     container.innerHTML += registerUI();
     container.innerHTML += messageAside();
     new RegisterContainer();
   }
-
   if (hash == "#logout") {
     container.innerHTML += logoutUI();
     container.innerHTML += messageAside();
     new LogoutContainer();
   }
-
+  if (hash == "#wallet") {
+    const root = ReactDOM.createRoot(container);
+    root.render(ReactWalletUI);
+  }
   if (hash == "#menu") {
     console.log("menu");
     container.innerHTML += messageAside();
@@ -56,5 +52,4 @@ const routerPush = async function (hash) {
     new MenuContainer();
   }
 };
-
 routerPush(window.location.hash);

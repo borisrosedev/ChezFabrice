@@ -30,7 +30,7 @@ const nav = function () {
 
   return `
             <nav class="nav">
-                <a href="/">
+                <a href="./">
                     <i class="fa-solid fa-house"></i>
                 </a>
                 <a href="#menu">
